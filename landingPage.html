@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="author">
+  <link href="bootstrap/favicon.ico" rel="icon">
+  <title>Metamorphic JS</title>
+  <!-- Bootstrap core CSS -->
+  <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" 
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="bundle.js">
+  </script> 
+  <link href="bootstrap/dist/css/custom.css" rel="stylesheet">
+  -->
+  <link href="bootstrap/dist/css/custom.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="bundle.js">
+  </script>
+</head>
+<body id="body" style="font-size: 20pt">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <h1 style="color: white; text-align: center;">Metamorphic JS</h1>
+    </div>
+  </nav>
+  <div class=".container-fluid">
+    <div class=".heading">
+      <p align="center" class="lead" style="color:black">Our aim is to morph an inital js code to an AST and then back to a js code with a equivalent output</p>
+    </div>
+  </div>
+  <form>
+    <div class="form-group">
+      <div class="col-md-6" id="col1">
+        <textarea class="form-control" id="plainjs" placeholder="Enter JavaScript code here" rows="18"></textarea>
+      </div><span class="glyphicon glyphicon-arrow-right" style="margin-left: -430px;margin-top:150px;"></span>
+      <div class="col-md-6" id="col2">
+        <textarea class="form-control" id="metajs" placeholder="Watch the magic happen. Hit submit!" rows="18"></textarea>
+      </div>
+      <div class="container-fluid">
+        <button class="btn btn-primary" id="submit" style="margin-left: 40%; margin-top:40px;" type="button">Submit</button> <input class="btn btn-primary" style="margin-left: 5%; margin-top: 40px; width: 5.5%;height:6%" type="reset" value="Reset">
+      </div>
+    </div>
+  </form>
+
+  <!-- ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    window.jQuery || document.write('<script src="bootstrap/assets/js/vendor/jquery.min.js"><\/script>')
+  </script>
+  
+  <style>
+  #plainjs,#metajs {  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+  width: 100%;
+  border-color: grey;
+  border-width: medium;
+  }
+  #col1 {
+  padding-left: 20%;
+  width:45%; 
+  }
+  #col2 {
+  padding-left: 10%;
+  width:35%; 
+  }
+
+  </style>
+</body>
+</html>

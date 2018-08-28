@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style>
+        
+        path.link {
+        fill:none;
+        stroke: #9e9e9e;
+        stroke-width: 2px;
+        color:#F5C8C8;
+      }
+    
+      div.hovermsg { 
+        position: absolute;
+        text-align: center;     
+        width:150px;          
+        height: 35px;         
+        padding: 2px;       
+        font: 12px sans-serif bold;    
+        background: #54749C; 
+        border: 0px;    
+        border-radius: 8px;     
+        pointer-events: none;
+
+    }
+    div.infoMsg {      
+        text-align: left;   
+        margin-top: 35px;                
+        font: 20px Georgia;
+        font-weight: bold;
+        text-decoration:underline;    
+        background: #FFFFFF;    
+        pointer-events: none;
+        font-size: 26px;
+        padding-top: 15px;
+    }
+
+    h1{
+        color: black;
+        text-align: center;
+        font-family: Garamond;
+    }
+
+    h2{
+        color: black;
+        text-align: center;
+        font-family: Georgia;
+    }
+    </style>
+    <body>
+        <h1>The world of Game of Thrones</h1>
+        <h2>Here are the top Contenders for "Iron Throne" and their council members</h2>
+        <script src="bundle.js"></script>
+        <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <section id="vis"></section>
+    </body>
+</html>
